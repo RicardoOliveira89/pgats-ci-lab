@@ -20,7 +20,7 @@ jobs:
       # instalação do node
       - uses: actions/setup-node@v4
         with:
-          node-version: 22.x
+          node-version: 'latest'
 
       # instalação do Yarn
       - name: Instalando Yarn
@@ -28,7 +28,7 @@ jobs:
 
       # instalação das dependências
       - name: Instalando dependências
-        run: yarn
+        run: yarn install
 
       # instalação do Playwright
       - name: Instalando Playwright
