@@ -1,8 +1,6 @@
 # CI de nível 1: Disparo manual de 1 click
-
 # nome do nosso 'pipeline'
 name: 'Execução Manual'
-
 # Regras de disparo (gatilhos/triggers)
 # gatilho de exec manual = workflow_dispatch
 on:
@@ -11,9 +9,8 @@ on:
 # trabalhos/tarefas dentro do pipeline = jobs
 jobs:
   e2e-tests:
-
     # máquina que o job vai executar
-    runs-on:  ubuntu-latest
+    runs-on: ubuntu-latest
 
     # passos so script do build
     steps:
