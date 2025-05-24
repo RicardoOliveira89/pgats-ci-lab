@@ -1,8 +1,10 @@
 # CI de nível 1: Disparo manual de 1 click
 # nome do nosso 'pipeline'
 name: 'Execução Manual'
+
 # Regras de disparo (gatilhos/triggers)
 # gatilho de exec manual = workflow_dispatch
+
 on:
   workflow_dispatch:
 
